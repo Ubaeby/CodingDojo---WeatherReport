@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section id="navbar">
+        <nav class="centerMass">
+            <div class="navRight">
+                <h1>
+                    DojoWeather
+                </h1>
+            </div>
+            <div class="navLeft">
+                <ul class="navUl">
+                    <li class="listItem" id="cityOne" onclick="cityAlert('cityOne')">Burbank</li>
+                    <li class="listItem" id="cityTwo" onclick="cityAlert('cityTwo')">Chicago</li>
+                    <li class="listItem" id="cityThree" onclick="cityAlert('cityThree')">Dallas</li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section id="secondNav">
+        <div class="centerMassTwo">
+            <div class="navRight">
+                <h2>San Jose</h2>
+            </div>
+            <div class="navLeft">
+                <ul class="tempUl">
+                    <li class="tempList">
+                        show temperature in
+                    </li>
+                    <li class="tempList">
+                        <select onchange="faren(this)">
+                            <option value="celcius">℃</option>
+                            <option value="farenheight">℉</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="thirdNav">
+        <div class="centerMassThree">
+            <div class="weatherBox">
+                <h2 class="date">Today</h2>
+                <img class="clouds" src="./assets/some_rain.png" alt="raining">
+                <p>some rain</p>
+                <div class="temperatureBottomWidth">
+                    <ul class="temperatureUl">
+                        <li class="red" id="l1" >24°</li>
+                        <li class="blue" id="l2">18°</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="weatherBox">
+                <h2 class="date">Tomorrow</h2>
+                <img class="clouds" src="./assets/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="temperatureBottomWidth">
+                    <ul class="temperatureUl">
+                        <li class="red" id="l3">27°</li>
+                        <li class="blue" id="l4">19°</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="weatherBox">
+                <h2 class="date">Friday</h2>
+                <img class="clouds" src="./assets/some_clouds.png" alt="cloud">
+                <p>some clouds</p>
+                <div class="temperatureBottomWidth">
+                    <ul class="temperatureUl">
+                        <li class="red" id="l5">21°</li>
+                        <li class="blue" id="l6">16°</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="weatherBox">
+                <h2 class="date">Saturday</h2>
+                <img class="clouds" src="./assets/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="temperatureBottomWidth">
+                    <ul class="temperatureUl">
+                        <li class="red" id="l7">26°</li>
+                        <li class="blue" id="l8">21°</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fourthNav">
+        <div id="removeCookie">
+            <div class="cookieDiv">
+                <ul class="cookieUl" >
+                    <li> <img class="cookieImg" src="./assets/cookie.png" alt="cookie!">
+                    <li>
+                        <p class="cookieP">Stop! Cookie Time</p>
+                        <p> We use cookies (sadly not the edible ones) to personalize content and ads, to provide social
+                            media features and to analyse our traffic. <span>Read more...</span></p>
+                    </li>
+                </ul>
+                <button class="accept" onclick="dismiss('removeCookie')">I Accept</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

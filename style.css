@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red: red;
+    --bodyWidth: 650px;
+}
+
+#navbar {
+    background-color: rgb(162, 198, 231);
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+}
+#secondNav {
+    display: flex;
+    justify-content: center;
+    height: 65px;
+}
+#thirdNav {
+    display: flex;
+    justify-content: center;
+}
+#fourthNav {
+    display: flex;
+    justify-content: center;
+}
+
+.centerMass {
+    width: var(--bodyWidth);
+    display: flex;
+    align-items: center;
+}
+.centerMassTwo {
+    width: var(--bodyWidth);
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.centerMassThree {
+    width: var(--bodyWidth);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#removeCookie {
+    width: var(--bodyWidth);
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.navRight {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    
+}
+h1 {
+    font-size: 2.5rem;
+}
+
+.navLeft {
+    flex-grow: 1;
+}
+.navUl {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tempUl {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.listItem {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.tempList {
+    list-style-type: none;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+select {
+    border: 2px solid black;
+}
+
+
+.weatherBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: gainsboro;
+    width: 150px;
+    margin-top: 20px;
+}
+
+.clouds {
+    margin: 15px 0px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.temperatureUl {
+    display: flex;
+    justify-content: space-around;
+}
+.temperatureUl li {
+    list-style-type: none;
+}
+.temperatureBottomWidth {
+    margin: 15px 0px;
+    width: 75%;
+}
+
+.red {
+    color: var(--red);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.blue {
+    color: rgb(0, 119, 255);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.date {
+    margin-top: 6px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cookieDiv {
+    border: 3px solid black;
+    background-color: gainsboro;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cookieUl {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
+
+.accept {
+    margin-right: 10px;
+    width: 70px;
+    height: 20px;
+    background-color: rgb(162, 198, 231);
+    box-shadow: 3px 2px black;
+    border: 2px solid black;
+}
+
+.cookieImg {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.cookieP {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+span {
+    color:rgb(55, 148, 236);
+    text-decoration: underline;
+}
